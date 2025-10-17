@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario Core 1 Constanza Hurtado Meneses</title>
+  </head>
+
+  <body>
+    <h1>Formulario Core 1 Constanza Hurtado Meneses</h1>
+    <form action="#" method="POST">
+      <!--<input type=”text”>-->
+      <div>
+        <h2>Comida favorita</h2>
+        <label for="nombre">Comida favorita: </label>
+        <input type="text" id="comida_fav" name="comida_fav" />
+      </div>
+     
+      <!--<input type=”radio”>-->
+      <div>
+        <h2>Música favorita</h2>
+        <label for="genero_musical">Música favorita: </label>
+        <input type="radio" id="pop" name="genero_musical" value="normal" />
+        <label for="pop">Pop</label>
+        <input type="radio" id="rock" name="genero_musical" value="normal" />
+        <label for="Rock">Rock</label>
+        <input type="radio" id="classic" name="genero_musical" value="normal" />
+        <label for="classic">Classic</label>
+      </div>
+     
+      <!--<textarea>-->
+      <div>
+        <h2>Opinión personal</h2>
+        <label for="opinion">Opinión personal: </label>
+        <textarea id="opinion" name="opinion" rows="5" cols="40"></textarea>
+      </div>
+     
+      <!--<input type=”password”>-->
+      <div>
+         <h2>Contraseña</h2>
+        <label for="clave">Contraseña: </label>
+        <input type="password" id="clave" name="clave" />
+      </div>
+     
+      <!--<input type=”checkbox”>-->
+      <div>
+         <h2>De acuerdo</h2>
+        <input type="checkbox" id="acepto" name="acepto" />
+        <label for="acepto">Estoy de acuerdo con todo</label>
+      </div>
+     
+      <!--<select>-->
+      <div>
+         <h2>Película favorita</h2>
+        <label for="peliculas">Película favorita: </label>
+        <select id="peliculas" name="peliculas">
+          <option value="iron_man">Iron Man</option>
+          <option value="captain_america">Captain America</option>
+          <option value="black_widow">Black Widow</option>
+        </select>
+      </div>
+
+      <!--<<input type=”date”>-->
+      <div>
+         <h2>Fecha de inicio del bootcamp</h2>
+        <label for="fecha_inicio">Fecha de inicio del bootcamp: </label>
+        <input type="date" id="fecha_inicio" name="fecha_inicio" />
+      </div>
+
+      <!--<input type=”submit”>-->
+       <h2>Adiós</h2>
+      <input type="submit" value="¿Listo para enviar?" />
+    </form>
+  </body>
+</html>

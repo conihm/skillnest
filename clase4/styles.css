@@ -1,0 +1,42 @@
+div{
+    background-color: lightblue;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+}
+
+span{
+    background-color: lightgreen;
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+div{
+    /* div selector 
+    display: none;
+    */
+    
+}
+
+div{
+    /* div selector */
+    display: inline-block;
+    margin: 0 10px;
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    background-color: lightcoral;
+    border-color: aqua;
+    border-style: groove;
+    box-shadow: 1px 1px 1px black;
+}
+
+#div2{
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+}

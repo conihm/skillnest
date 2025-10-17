@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="/registro" method="post">
+            <div>
+                <label>Tu nombre completo: </label>
+                <input type="text" name="nombre_completo" placeholder="Ingresa tu nombre " />
+            </div>
+
+            </form>
+            <div>
+                <label>Correo electrónico: </label>
+                <input type="text" name="correo" placeholder="Ingresa tu correo " />
+            </div>
+
+            <div>
+                <label>Contraseña: </label>
+                <input type="password" name="contraseña" placeholder="Ingresa tu contraseña" />
+            </div>
+
+            <div>
+                <input type="checkbox" name="suscribirse" id="suscribirse" checked />
+                <label for="suscribirse">Deseo suscribirme al boletín informativo.</label>
+            </div>
+
+            <input type="submit" value="Registrarse" />
+        </form>
+    </body>
+</html>

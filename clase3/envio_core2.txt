@@ -1,0 +1,92 @@
+<!--core2.html-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Core 2</title>
+    <link rel="stylesheet" href="styles.css" />
+
+</head>
+
+<body>
+    <header>
+        <h1>Core 2 Constanza Hurtado Meneses</h1>
+    </header>
+
+
+    <div class="container">
+        <div class="top-nav"></div>
+        <div class="main">
+            <div class="sub-content"></div>
+            <div class="sub-content"></div>
+            <div class="sub-content"></div>
+            <div id="advertisement"></div>
+        </div>
+        <div class="side-nav"></div>
+    </div>
+
+
+
+</body>
+
+</html>
+
+
+/*styles.css*/
+
+.container {
+    width: 950px;
+    background-color: #eaeaea;
+    margin: 0 auto;
+    padding: 10px 10px 10px 10px;
+}
+
+.top-nav {
+    height: 150px;
+    background-color: #ffcc00;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.side-nav {
+    display: inline-block;
+    height: 400px;
+    width: 225px;
+    background-color: #66ccff;
+    margin: 10px;
+    position: absolute;
+}
+
+.main {
+    display: inline-block;
+    margin: 10px 0;
+    height: 400px;
+    width: 700px;
+    background-color:deeppink;
+   
+}
+
+.sub-content {
+    display: inline-block;
+    margin: 10px;
+    height: 200px;
+    width: 210px;
+    background-color:mediumblue;
+}
+
+#advertisement {
+    height: 120px;
+    width: 660px;
+    background-color: #33cc33;
+    margin: 10px;
+    display: inline-block;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+}
+

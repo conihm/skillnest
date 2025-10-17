@@ -1,0 +1,100 @@
+
+
+
+.container {
+    width: 950px;
+    background-color: #eaeaea;
+    margin: 0 auto;
+    padding: 10px 10px 10px 10px;
+}
+
+.top-nav {
+    height: 150px;
+    background-color: #ffcc00;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.side-nav {
+    display: inline-block;
+    height: 400px;
+    width: 225px;
+    background-color: #66ccff;
+    margin: 10px;
+    position: absolute;
+}
+
+.main {
+    display: inline-block;
+    margin: 10px 0;
+    height: 400px;
+    width: 700px;
+    background-color:deeppink;
+   
+}
+
+.sub-content {
+    display: inline-block;
+    margin: 10px;
+    height: 200px;
+    width: 210px;
+    background-color:mediumblue;
+}
+
+#advertisement {
+    height: 120px;
+    width: 660px;
+    background-color: #33cc33;
+    margin: 10px;
+    display: inline-block;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+}
+
+/*div{
+    /* div selector 
+    display: none;
+    
+    
+}
+
+div{
+    /* div selector 
+    display: inline-block;
+    margin: 0 10px;
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    background-color: lightcoral;
+    border-color: aqua;
+    border-style: groove;
+    box-shadow: 1px 1px 1px black;
+}
+
+#div2{
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+}
+
+div{
+    background-color: lightblue;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+}
+
+span{
+    background-color: lightgreen;
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+*/
