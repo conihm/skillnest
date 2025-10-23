@@ -1,0 +1,21 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-bar{
+    background-color: grey;
+    text-align: center;
+    justify-content: space-between;
+    display: flex;
+    padding: 5px;
+    align-content: center;
+}
+
+#b-iniciar-sesion{
+    background-color: rgb(73, 102, 233);
+    text-align: left;
+    justify-content: space-between;
+    display: flex;
+    padding: 5px;
+    align-content: center;
+}
