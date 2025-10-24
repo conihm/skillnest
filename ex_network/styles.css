@@ -1,8 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
 }
 
 body {
@@ -23,7 +22,6 @@ header {
     display: flex;
     padding: 5%;
     gap: 1%;
-
 }
 
 .col-izq {
@@ -70,9 +68,8 @@ header {
     border: solid 1px black;
     border-radius: 5px;
     padding: 15px 20px;
-
     display: flex;
-    justify-content: space-between; /* Empuja los hijos a los extremos */
+    justify-content: space-between;
     align-items: flex-start;  
 }
 
