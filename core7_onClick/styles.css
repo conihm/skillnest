@@ -92,6 +92,52 @@ Escritorio grandes      -> 1280px
   }
 }
 
+
+.row {
+  display: flex;       /* ¡La magia de Flexbox! */
+  flex-wrap: wrap;     /* Permite que las columnas pasen abajo si no caben */
+  width: 100%;
+}
+
+/* --- 3. Estilos "Mobile-First" (sm y más pequeño) --- */
+/* Por defecto, todo es 100% (12 de 12 columnas) */
+.col-sm-12 {
+  width: 100%; /* (12 / 12 * 100) */
+}
+
+/* (Opcional) Un poco de relleno para que se vea bien */
+.col-sm-12 {
+   padding: 10px;
+}
+.contenido {
+  background-color: #eee;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+/* --- 4. El "Breakpoint" (md) usando Media Queries --- */
+
+/* "A partir de 768px de ancho de pantalla..." */
+@media (min-width: 768px) {
+  
+  /* "...cambia el estilo de estas clases" */
+
+  .col-md-6 {
+    width: 50%; /* (6 / 12 * 100) */
+  }
+
+  /* Si quisieras otras clases, seguirían la misma lógica: */
+  .col-md-4 {
+    width: 33.33%; /* (4 / 12 * 100) */
+  }
+  
+  .col-md-12 {
+     width: 100%; /* (12 / 12 * 100) */
+  }
+}
+
 .column {
     padding: 10px;
     margin: 10px;
@@ -108,11 +154,6 @@ Escritorio grandes      -> 1280px
 
 .col-3 {
     flex: 3;
-}
-
-.row {
-    display: flex;
-
 }
 
 /* MOBILE FIRST */

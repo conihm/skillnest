@@ -1,0 +1,82 @@
+* {
+    margin:0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+}
+
+header {
+    background-color: dodgerblue;
+    color: white;
+    padding: 20px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none; /*quita viñetas*/
+
+}
+
+ul li {
+    padding: 15px;
+    cursor: pointer;
+}
+
+
+h2 {
+    margin: 30px;
+    font-weight: lighter;
+    font-size: 30px;
+}
+
+section {
+    display: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background-color: rgba(211,211,211,0.2);
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.3) 5px 7px 7px 0px;
+    border: 1px solid rgba(211,211,211,0.7);
+    height: 200px;
+    width: 130px;
+    margin: 0 10px;
+    padding: 10px;
+}
+
+.card > h3, .card > p {
+    padding: 8px 0;
+}
+
+.card ion-icon {
+    font-size: 54px;
+    padding: 8px 0;
+}
+
+footer > div{
+    background-color: black;
+    color: white;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px;
+    align-items: center;
+    position: fixed;
+    bottom: 0;/*este y el anterior para fijar footer*/
+    width: 100%;
+}
+
+footer button {
+    background-color: gold;
+    padding: 5px;
+    border: none;
+}
