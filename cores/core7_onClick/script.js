@@ -21,8 +21,7 @@ btnMeGusta.forEach(function (boton) {
         contador++;
         boton.textContent = contador + " Me gusta";
         const mascota = boton.closest(".card").querySelector("h2").textContent;
-        console.log(mascota);
-
+        
         alert(mascota + " was liked!");
     });
 
