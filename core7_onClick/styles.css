@@ -1,369 +1,94 @@
 * {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.container {
-  display: flex;
-  border: solid 1px red;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.nav-bar {
-    background-color: grey;
-    padding: 20px;
-    align-items: center ;
-    margin: 10px;
-    width: 100%;
-}
-
-#i-searchterm{ 
-    width: 100%;
-    font-size: large;
-    padding-left: 10px;
-}
-
-
-#b-iniciar-sesion {
-    background-color: rgb(73, 102, 233);
-    color: aliceblue;
-    padding: 5px;
-    margin-right: 40px;
-}
-
-.justify-right {
-  justify-content: flex-end; 
-}
-
-
-/* MEDIA QUERIES */
-
-/* ANCHO DE PANTALLA 
-
-Móviles en vertical     -> 320px
-Móviles en horizontal   -> 480px
-Tablets                 -> 768px
-Escritorio pequeñas     -> 1024px
-Escritorio grandes      -> 1280px
-*/
-
-
-
-/* DESKTOP FIRST */
-/* Código del dispositivo grande */
-.item {
-  width: 25%;
-  margin: 5px;
-  padding: 20px;
-  background-color: lightgray;
-}
-
-/* Código del dispositivo mediano: 0 - 768px */
-@media (max-width: 768px) {
-  .item {
-    width: 40%;
-  }
-}
-
-/* Código del dispositivo pequeño: 0 - 590px */
-@media (max-width: 590px) {
-  .item {
-    width: 95%;
-  }
-  h1 {
-    color: cadetblue;
-  }
-}
-
-/* Condición -> 590px - 890px */
-@media (min-width: 590px) and (max-width: 890px) {
-  .item {
-    background-color: lightpink;
-  }
-}
-
-/* Condición -> 0 - 1024px u Horizontal */
-@media (max-width: 1024px) or (orientation: landscape) {
-  .item {
-    background-color: lightskyblue;
-  }
-}
-
-
-.row {
-  display: flex;       /* ¡La magia de Flexbox! */
-  flex-wrap: wrap;     /* Permite que las columnas pasen abajo si no caben */
-  width: 100%;
-}
-
-/* --- 3. Estilos "Mobile-First" (sm y más pequeño) --- */
-/* Por defecto, todo es 100% (12 de 12 columnas) */
-.col-sm-12 {
-  width: 100%; /* (12 / 12 * 100) */
-}
-
-/* (Opcional) Un poco de relleno para que se vea bien */
-.col-sm-12 {
-   padding: 10px;
-}
-.contenido {
-  background-color: #eee;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-
-/* --- 4. El "Breakpoint" (md) usando Media Queries --- */
-
-/* "A partir de 768px de ancho de pantalla..." */
-@media (min-width: 768px) {
-  
-  /* "...cambia el estilo de estas clases" */
-
-  .col-md-6 {
-    width: 50%; /* (6 / 12 * 100) */
-  }
-
-  /* Si quisieras otras clases, seguirían la misma lógica: */
-  .col-md-4 {
-    width: 33.33%; /* (4 / 12 * 100) */
-  }
-  
-  .col-md-12 {
-     width: 100%; /* (12 / 12 * 100) */
-  }
-}
-
-.column {
-    padding: 10px;
-    margin: 10px;
-    background-color: lightblue;
-}
-
-.col-1 {
-    flex: 1;
-}
-
-.col-2 {
-    flex: 2;
-}
-
-.col-3 {
-    flex: 3;
-}
-
-/* MOBILE FIRST */
-/* Código del dispositivo pequeño: 0px * /
-.item {
-  width: 95%;
-  margin: 5px;
-  padding: 20px;
-  background-color: lightgray;
-}
-
-/* Código del dispositivo mediano: 768px - inf * /
-@media (min-width: 768px) {
-  .item {
-    width: 40%;
-  }
-}
-
-/* Código del dispositivo grande: 1024px - inf * /
-@media (min-width: 1024px) {
-  .item {
-    width: 25%;
-  }
-}
-*/
-
-/*
-
-* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
-
-/* MEDIA QUERIES */
-
-/* ANCHO DE PANTALLA 
-
-Móviles en vertical     -> 320px
-Móviles en horizontal   -> 480px
-Tablets                 -> 768px
-Escritorio pequeñas     -> 1024px
-Escritorio grandes      -> 1280px
-* /
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-h1 {
-  text-align: center;
-  margin: 30px;
-}
-
-.container {
-  display: flex;
-  /*border: solid 1px red;* /
-  flex-wrap: wrap;
-}
-
-/* DESKTOP FIRST */
-/* Código del dispositivo grande * /
-.item {
-  width: 25%;
-  margin: 5px;
-  padding: 20px;
-  background-color: lightgray;
-}
-
-/* Código del dispositivo mediano: 0 - 768px * /
-@media (max-width: 768px) {
-  .item {
-    width: 40%;
-  }
-}
-
-/* Código del dispositivo pequeño: 0 - 590px * /
-@media (max-width: 590px) {
-  .item {
-    width: 95%;
-  }
-  h1 {
-    color: cadetblue;
-  }
-}
-
-/* Condición -> 590px - 890px * /
-@media (min-width: 590px) and (max-width: 890px) {
-  .item {
-    background-color: lightpink;
-  }
-}
-
-/* Condición -> 0 - 1024px u Horizontal * /
-@media (max-width: 1024px) or (orientation: landscape) {
-  .item {
-    background-color: lightskyblue;
-  }
-}
-
-/* MOBILE FIRST */
-/* Código del dispositivo pequeño: 0px * /
-.item {
   width: 95%;
-  margin: 5px;
-  padding: 20px;
-  background-color: lightgray;
-}
-
-/* Código del dispositivo mediano: 768px - inf * /
-@media (min-width: 768px) {
-  .item {
-    width: 40%;
-  }
-}
-
-/* Código del dispositivo grande: 1024px - inf * /
-@media (min-width: 1024px) {
-  .item {
-    width: 25%;
-  }
-}
-
-/* GRIDS * /
-
-#productos div,
-#servicios div {
-  border: solid 1px;
-  padding: 5px;
-  background-color: bisque;
-}
-
-.border {
-  border: 1px solid black;
-}
-
-#grilla {
-  display: grid;
-  /* Definimos cantidad y tamaño de filas y columnas * /
-  grid-template-columns: 20% auto 20%;
-  grid-template-rows: 100px auto auto 75px;
-  /* En grid-template-areas podemos dejar secciones vacías con none o . * /
-  grid-template-areas: "header header header" "menuNav productos publicidad" "menuNav servicios ." "contacto contacto contacto";
-  /* Aplicamos espacios/márgenes/huecos(gutters) entre las celdas * /
-  gap: 10px;
-  /* Entre columnas * /
-  column-gap: 15px;
-  /* Entre filas * /
-  row-gap: 20px;
+  
 }
 
 header {
-  grid-area: header;
-}
-
-nav {
-  grid-area: menuNav;
-}
-
-#productos {
-  grid-area: productos;
-}
-
-#servicios {
-  grid-area: servicios;
-}
-
-aside {
-  grid-area: publicidad;
-}
-
-footer {
-  grid-area: contacto;
-}
-
-#productos,
-#servicios {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
+  background-color: grey;
+  padding: 20px;
+  align-items: center;
+  width: 100%;
+  display: flex;
   gap: 10px;
-  height: 250px;
 }
 
-#productos {
-  /* Modificamos la posición de los hijos desde el padre * /
-  /* Eje HORIZONTAL */
-  /* Valores: start, end, center, stretch (por defecto) * /
-  justify-items: stretch;
-  /* Eje VERTICAL */
-  /* Valores: start, end, center, stretch (por defecto) * /
-  align-items: stretch;
+.logo {
+  flex: 1;
+  margin-right: 10px;
 }
 
-#servicios {
-  /* Alineamos items en conjunto * /
-  /* Eje HORIZONTAL */
-  /* Valores: start, end, center, space-between, space-around, space-evenly, stretch (por defecto) * /
-  justify-content: stretch;
-  /* Eje VERTICAL */
-  /* Valores: start, end, center, space-between, space-around, space-evenly, stretch (por defecto) * /
-  align-content: stretch;
+.busqueda {
+  flex: 6;
 }
 
-.serv1 {
-  /* Modificamos la posición del elemento hijo seleccionado * /
-  /* Eje HORIZONTAL */
-  /* Valores: start, end, center, stretch (por defecto) * /
-  justify-self: center;
-  /* Eje VERTICAL */
-  /* Valores: start, end, center, stretch (por defecto) * /
-  align-self: center;
+.b_iniciar_sesion {
+  flex: 1;
+  text-align: right;
+  align-items: right;
 }
-*/
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+header > div > input {
+  width: 90%;
+  font-size: large;
+  padding-left: 10px;
+}
+
+header > div > button {
+  background-color: rgb(73, 102, 233);
+  color: aliceblue;
+  padding: 5px;
+  margin-right: 40px;
+}
+
+.col-izq {
+  flex: 2;
+  padding: 10px;
+}
+.col-der {
+  flex: 1;
+  padding: 10px;
+}
+
+.definicion {
+  width: 100%;
+  border: solid 1px black;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 5px;
+  
+}
+
+#agregar_def{
+  background-color: green;
+  color: white;
+  padding: 10px;
+}
+
+.card {
+  width: 100%;
+  border: solid 1px black;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 5px;
+  
+}
+
+.card > * {
+  padding: 4px;
+}
+
+#me_gusta {
+  margin: 5px;
+}

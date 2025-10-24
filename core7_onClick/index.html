@@ -6,69 +6,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title> "Core 7 OnClick</title>
   <link rel="stylesheet" href="styles.css" />
-
-  <script src="script.js" defer> </script>
-
-  </head>
+  <script src="./script.js" defer> </script>
+</head>
 
 <body>
-  <nav class="nav-bar container">
-    <div class="col-1 container">
+  <header>
+    <div class="logo">
       <h1>Petlopedia</h1>
     </div>
-    <div class="col-3 col-3 col-3 col-1 container">
-      <input type="text" id="i-searchterm" placeholder="Buscar mascotas" />
+    <div class="busqueda">
+      <input type="text" placeholder="Buscar mascotas" />
     </div>
-    <div class="col-1 justify-right container">
-      <button id="b-iniciar-sesion"> Iniciar sesión </button>
+    <div class="b_iniciar_sesion">
+      <button id="iniciar_sesion">Iniciar Sesión</button>
     </div>
-  </nav>
-  
-  <h1>Media Queries</h1>
-  <div class="container">
-    <div class="item">
-      <h2>Item 1</h2>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad autem
-        asperiores nisi laborum temporibus minima? Ut reprehenderit eveniet
-        culpa quae laborum harum explicabo eius nam, dignissimos, quasi ipsum
-        soluta asperiores tempore doloribus excepturi ipsa! Aspernatur
-        assumenda sit molestiae soluta quos!
-      </p>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="col-izq">
+        <div class="card">
+          <h2>Gato Atigrado</h2>
+          <p><i>sustantivo</i></p>
+          <p>Gatos Atigrados</p>
+          <p>
+            Un gato con un pelaje distintivo que presenta rayas, puntos o patrones en remolino, usualmente con una marca
+            en forma de "M" en su frente.
+          </p>
+          <button class="me_gusta">0 Me gusta</button>
+
+        </div>
+        <div class="card">
+          <h2>Golden Retriever</h2>
+          <p><i>sustantivo</i></p>
+          <p>Golden Retrievers</p>
+          <p>
+            Una raza de perro amistosa, inteligente y devota, conocida por su pelaje dorado y su habilidad para
+            recuperar
+            objetos sin dañarlos.
+          </p>
+          <button class="me_gusta">0 Me gusta</button>
+        </div>
+
+      </div>
+      <div class="col-der">
+        <div class="definicion">
+          <p>Petlopedia está definidio por TI</p>
+          <button id="agregar_def"> Agregar definición</button>
+        </div>
+      </div>
     </div>
-    <div class="item">
-      <h2>Item 1</h2>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad autem
-        asperiores nisi laborum temporibus minima? Ut reprehenderit eveniet
-        culpa quae laborum harum explicabo eius nam, dignissimos, quasi ipsum
-        soluta asperiores tempore doloribus excepturi ipsa! Aspernatur
-        assumenda sit molestiae soluta quos!
-      </p>
-    </div>
-    <div class="item">
-      <h2>Item 1</h2>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad autem
-        asperiores nisi laborum temporibus minima? Ut reprehenderit eveniet
-        culpa quae laborum harum explicabo eius nam, dignissimos, quasi ipsum
-        soluta asperiores tempore doloribus excepturi ipsa! Aspernatur
-        assumenda sit molestiae soluta quos!
-      </p>
-    </div>
-    <div class="item">
-      <h2>Item 1</h2>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad autem
-        asperiores nisi laborum temporibus minima? Ut reprehenderit eveniet
-        culpa quae laborum harum explicabo eius nam, dignissimos, quasi ipsum
-        soluta asperiores tempore doloribus excepturi ipsa! Aspernatur
-        assumenda sit molestiae soluta quos!
-      </p>
-    </div>
-  </div>
+  </section>
 
 </body>
-
-
 </html>
