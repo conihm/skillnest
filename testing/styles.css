@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* MEDIA QUERIES */
+
+/* ANCHO DE PANTALLA 
+
+Móviles en vertical     -> 320px
+Móviles en horizontal   -> 480px
+Tablets                 -> 768px
+Escritorio pequeñas     -> 1024px
+Escritorio grandes      -> 1280px
+*/
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  display: flex;
+  border: solid 1px red;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* DESKTOP FIRST */
+/* Código del dispositivo grande */
+.item {
+  width: 25%;
+  margin: 10px;
+  padding: 25px;
+  background-color: lightgray;
+  border: solid 1px red;
+}
+
+button {
+  background-color: rgb(63, 63, 200);
+  padding: 20px;
+  color: beige;
+  justify-content: center;
+}
+
+/* Código del dispositivo mediano: 0 - 768px */
+@media (max-width: 768px) {
+  .item {
+    width: 40%;
+    background-color: lightpink;
+  }
+  button {
+    background-color: blueviolet;
+  }
+}
+
+/* Código del dispositivo pequeño: 0 - 590px */
+@media (max-width: 590px) {
+  .item {
+    width: 95%;
+    background-color: lightskyblue;
+  }
+  button {
+    background-color: green;
+  }
+}
