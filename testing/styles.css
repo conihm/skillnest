@@ -63,3 +63,12 @@ button {
     background-color: green;
   }
 }
+
+.image {
+    width: 400px;
+    transition: transform 0.8s ease-in-out;
+}
+
+.image:hover {
+    transform: scale(1.3);
+}
