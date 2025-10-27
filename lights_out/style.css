@@ -36,3 +36,11 @@ button {
 button:hover {
     background-color: #f0f0f0;
 }
+
+.lightOn {
+    background-color:rgb(255, 255, 5);
+}
+
+.lightOff {
+    background-color: rgb(121, 119, 119);
+}
