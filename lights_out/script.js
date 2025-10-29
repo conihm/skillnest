@@ -2,6 +2,7 @@ var matrix = [];
 const nBotonesEncendidos = 10;
 const GRID_SIZE = 5;
 const boxes = document.querySelectorAll('button');
+const movimientos = [{i: -1,j: 0},{i: 1,j: 0},{i: 0,j: -1},{i: 0,j: 1}, {i: 0, j: 0}];
 
 function seleccionarLucesIniciales() {
     for (var i = 0; i < nBotonesEncendidos; i++) {
@@ -22,13 +23,7 @@ function inicializarLuces() {
         else box.classList.add("lightOff");
     }
 }
-
-function seleccionarBox(box) {
-    box.classList.toggle("lightOn");
-    box.classList.toggle("lightOff");
-}
-
-
+/*
 function obtenerVecinos(id) {
     let vecinos = [];
     let fila = Math.floor((id - 1) / GRID_SIZE);
@@ -42,6 +37,19 @@ function obtenerVecinos(id) {
         }
     }
     return vecinos;
+}*/
+
+function obtenerVecinos(id) {
+    let vecinos = [];
+    let fila = Math.floor((id - 1) / GRID_SIZE);
+    let columna = (id - 1) % GRID_SIZE;
+    for(mov of movimientos) {
+        if ((fila + mov.i) >= 0 && (fila + mov.i) < GRID_SIZE && (columna + mov.j) >= 0 && (columna + mov.j) < GRID_SIZE) {
+                var vecino = (fila + mov.i) * GRID_SIZE + (columna + mov.j) + 1;
+                vecinos.push(vecino);
+            }
+    }
+    return vecinos;
 }
 
 function seleccionarBox(box) {
@@ -49,7 +57,7 @@ function seleccionarBox(box) {
     console.log(box.id);
     console.log(vecinos);
     for (vecino of vecinos) {
-        boxVecino = document.getElementById(vecino)
+        boxVecino = document.getElementById(String(vecino));
         console.log(boxVecino);
         boxVecino.classList.toggle("lightOn");
         boxVecino.classList.toggle("lightOff");
@@ -70,7 +78,7 @@ function evaluarResultado(){
 
 function revisarLucesApagadas(){
     for(box of boxes){
-        if(box.contains("lightOn")) return false;
+        if(box.classList.contains("lightOn")) return false;
     }
     return true;
 }
